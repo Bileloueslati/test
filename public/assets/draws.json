@@ -1,0 +1,47 @@
+{
+  "eid": "2020200121054",
+
+  "results": [
+    {
+      "id": "3087320",
+      "type": "number",
+      "value": "5",
+      "draw_index": 1
+    },
+
+    {
+      "id": "3087322",
+      "type": "number",
+      "value": "21",
+      "draw_index": 1
+    },
+
+    {
+      "id": "3087321",
+      "type": "number",
+      "value": "27",
+      "draw_index": 1
+    },
+
+    {
+      "id": "3087319",
+      "type": "number",
+      "value": "42",
+      "draw_index": 1
+    },
+
+    {
+      "id": "30877323",
+      "type": "special",
+      "value": "9",
+      "draw_index": 1
+    },
+
+    {
+      "id": "3087324",
+      "type": "special",
+      "value": "11",
+      "draw_index": 1
+    }
+  ]
+}
