@@ -1,19 +1,19 @@
-### Build with Symfony and React
+### Made with Symfony, Typescript and React
 
-This project requires PHP > >=8.1.
+This App requires PHP > >=8.1.
 
 For the front end, production builds are already done with [Webpack Encore](https://symfony.com/doc/current/frontend.html). 
 
-If you want to edit JS or css files you will need to rebuild node modules, Node JS >= 16.8
-## To install Composer dependencies
-### `Composer install`
+If you want to edit JS or add CSS files you will need to install and rebuild node modules by running the following commands (Node JS >= 16.8)
 
-##### To install node js modules
-### `yarn install`
+- `yarn install`
 
-##### To create a production build
+- `yarn build`
 
-### `yarn build`
+## To run the application
 
-##### To run symfony server
-### `symfony serve`
+##### Install PHP dependencies with Composer
+#### `Composer install`
+
+##### then run symfony server
+#### `symfony serve`
