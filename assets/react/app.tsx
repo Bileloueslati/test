@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Filter from "./Component/filter";
 import Tag from "./Component/tag";
 import { DrawsResult } from "./__typescript/draw";
 
@@ -27,7 +28,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto my-6">
-      <div className="bg-white flex flex-col border border-zinc-100 py-6 px-4 rounded-lg shadow-sm">
+      <div className="bg-white flex flex-col border border-zinc-100 py-6 lg:px-10 px-4 rounded-lg shadow-sm">
         <div className="text-center">
           <h1 className="text-2xl lg:text-4xl font-bold">
             Résultats du tirage au sort
@@ -35,7 +36,22 @@ const App = () => {
           <span className="text-slate-400">{drawsResult.drawn_at}</span>
         </div>
 
-        <div className="flex justify-end"></div>
+        <div className="flex lg:justify-end justify-center">
+          <Filter
+            drawResult={drawsResult}
+            updateDrawResult={setDrawsResult}
+            types={[
+              {
+                name: "Boules",
+                value: "balls",
+              },
+              {
+                name: "Etoiles",
+                value: "stars",
+              },
+            ]}
+          />
+        </div>
 
         <table className="border-collapse table-auto w-full text-sm my-2">
           <thead>
@@ -56,12 +72,18 @@ const App = () => {
           </tbody>
         </table>
 
-        <ul className="mt-4 flex flex-col justify-center items-center gap-y-2">
-          <li><strong>Somme de boules </strong>: {drawsResult.ballsValue} </li>
+        <ul className="mt-4 flex lg:flex-row flex-col lg:justify-end justify-center items-center gap-x-4 gap-y-2">
+          <li>
+            <strong>Somme de boules </strong>: {drawsResult.ballsValue}{" "}
+          </li>
 
-          <li><strong>Somme des étoiles </strong>: {drawsResult.starsValue} </li>
+          <li>
+            <strong>Somme des étoiles </strong>: {drawsResult.starsValue}{" "}
+          </li>
 
-          <li><strong>Combinaison :</strong> {drawsResult.combinaison} </li>
+          <li>
+            <strong>Combinaison :</strong> {drawsResult.combinaison}{" "}
+          </li>
         </ul>
       </div>
     </div>
