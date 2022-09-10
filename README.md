@@ -1,6 +1,6 @@
 ### Made with Symfony, Typescript and React
 
-This App requires PHP > >=8.1.
+This App requires PHP >= 8.1
 
 For the front end, production builds are already done with [Webpack Encore](https://symfony.com/doc/current/frontend.html). 
 
